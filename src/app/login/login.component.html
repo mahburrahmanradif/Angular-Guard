@@ -1,0 +1,24 @@
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="row">
+        <div class="col-12">
+            <div class="form-container mt-5 p-5 border rounded">
+
+                <h2 class="text-center mb-4">Login Form</h2>
+
+                <div class="form-group mb-4">
+                    <label for="txtUserName">Username</label>
+                    <input type="text" id="txtUserName" #txtUserName class="form-control form-control-lg" placeholder="Enter your username" />
+                </div>
+                <div class="form-group mb-4">
+                    <label for="txtPassword">Password</label>
+                    <input type="password" id="txtPassword" #txtPassword class="form-control form-control-lg" placeholder="Enter your password" />
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary btn-lg" (click)="login(txtUserName.value, txtPassword.value)">Login</button>
+                </div>
+
+            </div>   
+        </div>
+    </div>
+</div>

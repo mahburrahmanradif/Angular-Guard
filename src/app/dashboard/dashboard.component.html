@@ -1,0 +1,21 @@
+<!-- dashboard.component.html -->
+
+<div class="dashboard">
+    <h1>{{ title }}</h1>
+    <p>{{ metaDescription }}</p>
+  
+    <div *ngIf="showInMenu" class="menu">
+      <ul>
+        <li><a routerLink="/dashboard">Dashboard</a></li>
+        <li><a routerLink="/profile">Profile</a></li>
+        <li><a routerLink="/settings">Settings</a></li>
+        <!-- Add more menu items as needed -->
+      </ul>
+    </div>
+  
+    <div class="content">
+      <!-- Dashboard content goes here -->
+      <p>Welcome to the Dashboard!</p>
+    </div>
+  </div>
+  
