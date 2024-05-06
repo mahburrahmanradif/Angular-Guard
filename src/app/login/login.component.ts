@@ -13,7 +13,11 @@ export class LoginComponent {
 
     if(userName === 'radif' && password === 'radif'){
       sessionStorage.setItem("isLoggedIn", "true");
-    }else{
+
+      // Set the user's role
+      sessionStorage.setItem("userRole", "admin"); // Set the user's role as admin for example
+      
+    }else {
       sessionStorage.setItem("isLoggedIn", "false");
     }
 
